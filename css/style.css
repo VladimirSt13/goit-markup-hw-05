@@ -60,9 +60,20 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 /* Header */
 .page-header {
-  /* display: flex; */
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -259,9 +270,6 @@ img {
   display: block;
   fill: currentColor;
 }
-/* .button-close:hover {
-  border: 1px solid rgba(0, 0, 0, 0.3);
-} */
 /* Section */
 .section {
   padding-top: 94px;
@@ -285,11 +293,6 @@ img {
 /* Features */
 .feature-list {
   display: flex;
-}
-.feature .section-title {
-  visibility: hidden;
-  font-size: 0;
-  margin-bottom: 0;
 }
 .feature-list .item {
   width: calc((100% - 90px) / 4);
@@ -448,14 +451,6 @@ img {
 }
 
 /* Portfolio */
-
-.portfolio-title {
-  visibility: hidden;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 0;
-  margin-bottom: 0;
-}
 .portfolio-filter {
   display: flex;
   margin-bottom: 50px;
