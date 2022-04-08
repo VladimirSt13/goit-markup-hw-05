@@ -211,8 +211,13 @@ img {
   background-color: var(--accent-color-primary);
   border-color: var(--accent-color-primary);
   color: var(--text-color-white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background: #188ce8;
 }
 .backdrop {
   position: fixed;
